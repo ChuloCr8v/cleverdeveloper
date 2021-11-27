@@ -27,7 +27,7 @@ const Hero = () => {
         
           <div className={styles.intro}>
             <h2> Hi, </h2>
-            <h1>I'm <span className={styles.name}>Chex<span>Chex</span></span></h1>
+            <h1>I&#39;m <span className={styles.name}>Chex<span>Chex</span></span></h1>
           </div>
           <div className={styles.stacks}>
             <p> a frontend developer currently working with </p>
