@@ -21,13 +21,13 @@ const Projects = () => {
             <div className={styles.loader_icon}></div>
             <p>Image is Loading, Please Hold on</p>
           </div>
-          <Image src={item.img} height="300" width="400" alt="devchex projects" />
+          <Image src={item.img} height={300} width={400} alt="devchex projects" />
           <a href={item.link} target="_blank" rel="noopener noreferrer">{item.name}</a>
           <a href={item.link} className={styles.clip} target="_blank" rel="noopener noreferrer">{item.name}</a>
         </div>
         ))}
         <div className={styles.hire} data-aos="fade">
-          <Image src={Logo} height="300" width="400" alt="devchex projects" />
+          <Image src={Logo} height={300} width={400} alt="devchex projects" />
           <a href="#contact" target="_blank" rel="noopener noreferrer">Hire Me</a>
         </div>
       </div>
