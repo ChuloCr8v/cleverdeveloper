@@ -1,0 +1,127 @@
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project,
+.hire {
+  background: white;
+  margin-block:2rem;
+  position: relative;
+  @include flex;
+  overflow: hidden;
+  box-shadow: 3px 3px 20px 2px rgb(0,0,0,0.1);
+  border-radius: 10px;
+  position: relative;
+  img {
+    object-fit:cover;
+    position: relative;
+    z-index: 10;
+  }
+  a {
+    position: absolute;
+    transform: translateY(100vh);
+    transition: all 0.3s;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    z-index: 20;
+  }
+  .clip {
+    background: transparent;
+  }
+  &::after {
+    background: black;
+    content: '';
+    height: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+    z-index: 10;
+  }
+  &:hover {
+    box-shadow: 3px 3px 20px 2px rgb(0,0,0,0.3);
+    img {
+      transform: scale(1.5);
+      transition: all 0.3s ease-in-out;
+    }
+    a {
+      transform: translateY(0);
+      z-index: 20;
+    }
+    &::after {
+      height: 100%;
+    }
+  }
+}
+
+.loader {
+  position: absolute;
+  @include flex;
+  flex-direction: column;
+}
+
+.loader p {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.loader_icon {
+  height: 3rem;
+  width: 3rem;
+  background: linear-gradient(#e66465, #9198e5);
+  border-radius: 100%;
+  z-index: 0;
+  animation: rotate 0.02s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+.hire {
+  a {
+    transform: translateY(0);
+  }
+  &::after {
+    height: 100%;
+  }
+}
+.project {
+  &:nth-child(1) {
+    margin-top: -13rem;
+  }
+}
+
+@media (min-width: 688px) {
+
+  .projects {
+    margin-top: -15rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .project,
+  .hire {
+    margin: 0;
+    border-radius: 0;
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+  }
+}
