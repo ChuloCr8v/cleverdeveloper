@@ -21,7 +21,7 @@ const Projects = () => {
             <div className={styles.loader_icon}></div>
             <p>Image is Loading, Please Hold on</p>
           </div>
-          <Image src={item.img} height={300} width={400} alt="devchex projects" />
+          <Image src={item.img} height={300} width={400} alt={item.name} />
           <a href={item.link} target="_blank" rel="noopener noreferrer">{item.name}</a>
           <a href={item.link} className={styles.clip} target="_blank" rel="noopener noreferrer">{item.name}</a>
         </div>
@@ -36,3 +36,4 @@ const Projects = () => {
 }
 
 export default Projects
+
