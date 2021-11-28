@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.container {
+  width: min(90%, 80rem);
+}
+
 .show_header {
   transform: translateY(-100px);
 }
