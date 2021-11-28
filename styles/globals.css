@@ -77,7 +77,7 @@ footer {
 
 section,
 footer {
-  padding: 5rem 2rem;
+  padding: 5rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
