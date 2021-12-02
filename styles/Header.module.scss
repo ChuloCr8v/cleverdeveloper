@@ -8,12 +8,7 @@
   width: min(90%, 80rem);
 }
 
-.show_header {
-  transform: translateY(-100px);
-}
-
 #header {
-  background: white ;
   width: 100%;
   position: fixed;
   z-index: 100;

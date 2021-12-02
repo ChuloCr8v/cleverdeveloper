@@ -1,10 +1,16 @@
 import '../styles/globals.css'
+import 'tailwindcss/tailwind.css'
 import Layout from '../pages/layout/Layout'
+import {ThemeProvider} from 'next-themes'
 
 function MyApp({ Component, pageProps }) {
-  return <Layout>
-  <Component {...pageProps} />
-   </Layout>
+  return (
+  <ThemeProvider enableSystem={true} attribute="class">
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  </ThemeProvider>
+) 
 }
 
 export default MyApp

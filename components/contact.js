@@ -14,7 +14,7 @@ const Contact = () => {
   }, []);
   
   return(
-    <section className={styles.contact}>
+    <section id={styles.contact}>
       <div className={styles.container}>
         <h2 className={styles.heading} data-aos="fade-up">Contact Me</h2>
         
@@ -25,10 +25,10 @@ const Contact = () => {
             <p> You can reach out to me on any of the following channels and for further discussions or you can just fill out the form with your enquiry and I will surely get back to you immediately. 
             </p>
             <div className={styles.social_icons} data-aos="fade-up">
-              <a href="https://chexthedev.netlify.app"><FaEnvelope className={styles.social_icon} /></a>
-              <a href="https://chexthedev.netlify.app"><FaWhatsapp className={styles.social_icon} /></a>
-              <a href="https://www.linkedin.com/in/bonaventure-nkematu-77b563148"><FaLinkedin className={styles.social_icon} /></a>
-              <a href="https://github.com/ChuloCr8v"><FaGithub className={styles.social_icon} /></a>
+              <a href="https://chexthedev.netlify.app"><FaEnvelope id={styles.social_icon} /></a>
+              <a href="https://chexthedev.netlify.app"><FaWhatsapp id={styles.social_icon} /></a>
+              <a href="https://www.linkedin.com/in/bonaventure-nkematu-77b563148"><FaLinkedin id={styles.social_icon} /></a>
+              <a href="https://github.com/ChuloCr8v"><FaGithub id={styles.social_icon} /></a>
             </div>
           </div>
           

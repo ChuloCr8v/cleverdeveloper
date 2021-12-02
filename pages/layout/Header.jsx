@@ -5,9 +5,22 @@ import Link from 'next/link'
 import {FaBars, FaSun, FaMoon} from 'react-icons/fa'
 import Menu from '../../components/Menu'
 import {useState, useEffect} from 'react'
+import {useTheme} from 'next-themes'
 import {motion} from 'framer-motion'
 
 const Header = () => {
+  //light and dark theme config
+  const {systemTheme, theme, setTheme} = useTheme()
+  
+  const renderThemeChanger = () => {
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+    
+    if(currentTheme === 'dark'){
+      setDark(true)
+    } else {
+      setDark(false)
+    }
+  }
   
   const [showMenu, setShowMenu] = useState(false);
   const [dark, setDark] = useState(false);
@@ -62,7 +75,7 @@ const Header = () => {
   
   
   return(
-    <header id={styles.header} className={showHeader ? styles.show_header : ''} style={{boxShadow: `${shadow ? '3px 3px 32px 1px rgb(0,0,0,0.06)' : ''}`}} >
+    <header id={styles.header} className="bg-white dark:bg-gray-900 transition all 3000ms ease" style={{boxShadow: `${shadow ? '3px 3px 32px 1px rgb(0,0,0,0.06)' : ''}`, transform: `${showHeader ? 'translateY(-100px)' : ''}`}} >
      <div className={styles.container}>
        <Link href="/" className={styles.logo}>
           <Image src={Logo} alt="dev chex logo" height="50" width="40" />
@@ -71,8 +84,8 @@ const Header = () => {
        <div className={styles.bar_container}>
        
          <div className={styles.dark_mode}>
-           {dark && <FaSun className={styles.icon} onClick={() => setDark(!dark)} />} 
-           {!dark && <FaMoon className={styles.icon} onClick={() => setDark(!dark)} />} 
+           <FaSun className={styles.icon} onClick={() => setTheme('light')} />
+            <FaMoon className={styles.icon} onClick={() => setTheme('dark') } />
          </div>
          
          <FaBars className={styles.menu_icon} onClick={() => setShowMenu(!showMenu)} style={{color: `${showMenu ? 'red' : ''}`, transform: `rotateY(${showMenu ? '45deg' : '0'}) `}} />
