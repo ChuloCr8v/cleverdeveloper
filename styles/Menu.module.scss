@@ -9,6 +9,7 @@
 }
 
 .nav {
+  background: white;
   position: fixed;
   left: 0;
   top: 4rem;
@@ -22,6 +23,7 @@
 
 .menu_item {
   a {
+    color: black;
     font-weight: 900;
     margin-block: 0.7rem;
     transition: all 0.3s;

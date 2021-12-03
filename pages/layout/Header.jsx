@@ -84,8 +84,7 @@ const Header = () => {
        <div className={styles.bar_container}>
        
          <div className={styles.dark_mode}>
-           <FaSun className={styles.icon} onClick={() => setTheme('light')} />
-            <FaMoon className={styles.icon} onClick={() => setTheme('dark') } />
+           {theme == 'dark' ? <FaSun className={styles.icon} onClick={() => setTheme('light')} /> : <FaMoon className={styles.icon} onClick={() => setTheme('dark') } />} 
          </div>
          
          <FaBars className={styles.menu_icon} onClick={() => setShowMenu(!showMenu)} style={{color: `${showMenu ? 'red' : ''}`, transform: `rotateY(${showMenu ? '45deg' : '0'}) `}} />
