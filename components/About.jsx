@@ -1,14 +1,8 @@
 import styles from '../styles/About.module.scss' 
 import {FaArrowRight} from 'react-icons/fa'
 import Link from 'next/link'
-import Html from '../public/html.png'
-import Css from '../public/css.png'
-import Sass from '../public/sass.png'
-import Boostrap from '../public/boostrap.svg'
-import Tailwind from '../public/tailwind.png'
-import Js from '../public/js.png'
-import React from '../public/react.png'
-import Next from '../public/next.png'
+import Image from 'next/image'
+import Stacks from './Stacks'
 import AOS from 'aos'
 import "aos/dist/aos.css" 
 import {useEffect} from 'react'
@@ -37,16 +31,18 @@ const About = () => {
           </div>
   
           <div className={styles.stacks} >
-            <h2 className="text-center text-xl text-yellow-200 font-bold" data-aos="fade-up">My Tools</h2>
+            <h2 className="text-center text-xl text-yellow-200 font-bold" data-aos="fade-up">Some Tools That I Work With</h2>
             <div className={styles.stack_icons} >
-              
+              {Stacks.map((stack) => (
                 <figure data-aos="fade-up">
-                  <img src={Html.src} alt="html5" height="60" width="60" className={styles.stack_icon} />
-                  <figcaption>HTML5</figcaption>
+                  <Image src={stack.img} alt={stack.name} height="60" width="60" className={styles.stack_icon} />
+                  <figcaption>{stack.name}</figcaption>
                 </figure>
+                )) 
+              } 
                   
               
-                <figure data-aos="fade-up">
+             { /*  <figure data-aos="fade-up">
                   <img src={Css.src} alt="html5" height="60" width="60" className={styles.stack_icon} />
                   <figcaption>CSS3</figcaption>
                 </figure>
@@ -85,7 +81,7 @@ const About = () => {
                 <figure data-aos="fade-up">
                   <img src={Next.src} alt="html5" height="60" width="60" className={styles.stack_icon} />
                   <figcaption>NextJs</figcaption>
-                </figure>
+                </figure>*/} 
                   
               </div>
           

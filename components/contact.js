@@ -16,7 +16,7 @@ const Contact = () => {
   return(
     <section data-aos="fade-up" id={styles.contact}>
       <div className={styles.container}>
-       <Heading text={"About Me"} />
+       <Heading text={"Contact Me"} />
         
         <div className={styles.content_container}>
           <div className={styles.content} data-aos="fade-up">
@@ -33,7 +33,7 @@ const Contact = () => {
           </div>
           
             <div className={styles.form_container}>
-              <p className="font-bold text-yellow-300" data-aos="fade-up">Send a message</p>
+              <p className="font-bold text-yellow-800" data-aos="fade-up">Send a message</p>
               
               <form data-aos="fade-up">
                 <div className={styles.form_group}>

@@ -14,7 +14,7 @@
 }
 .content {
   margin-top: 2.5rem;
-  text-align: justify;
+  text-align: left;
   span {
     color: yellow;
     font-size: 1.2rem;
@@ -76,7 +76,6 @@
     border-radius: 100%;
     padding: .3rem;
     margin: .3rem;
-    box-shadow: 3px 3px 8px 2px rgb(0,0,0,0.2);
   }
   figcaption {
     display: block;
@@ -89,7 +88,7 @@
 @media (min-width: 688px) {
   .content_container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .content_container > * {
