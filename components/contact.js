@@ -33,7 +33,7 @@ const Contact = () => {
           </div>
           
             <div className={styles.form_container}>
-              <p className="font-bold text-yellow-800" data-aos="fade-up">Send a message</p>
+              <p className="font-bold text-yellow-800 dark:text-yellow-200" data-aos="fade-up">Send a message</p>
               
               <form data-aos="fade-up">
                 <div className={styles.form_group}>

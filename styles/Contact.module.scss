@@ -44,7 +44,8 @@
 }
 
 .form_container {
-  padding-block: 3rem;
+  padding-top: 3rem;
+  border: 2px silver solid ;
   @include flex;
   flex-direction: column;
   margin-top: 5rem;

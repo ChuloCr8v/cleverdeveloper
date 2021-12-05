@@ -31,11 +31,11 @@ const About = () => {
           </div>
   
           <div className={styles.stacks} >
-            <h2 className="text-center text-xl text-yellow-200 font-bold" data-aos="fade-up">Some Tools That I Work With</h2>
+            <h2 className="text-center text-xl text-yellow-200 font-bold mb-6 " data-aos="fade-up">Some Tools That I Work With</h2>
             <div className={styles.stack_icons} >
               {Stacks.map((stack) => (
                 <figure data-aos="fade-up">
-                  <Image src={stack.img} alt={stack.name} height="60" width="60" className={styles.stack_icon} />
+                  <img src={stack.img} alt={stack.name} height="60" width="60" className={styles.stack_icon} />
                   <figcaption>{stack.name}</figcaption>
                 </figure>
                 )) 
