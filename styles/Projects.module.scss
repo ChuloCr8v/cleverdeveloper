@@ -5,6 +5,9 @@
   align-items: center;
 }
 
+.container {
+  width: min(90%, 80rem);
+}
 
 #project {
   background: white;
@@ -122,7 +125,7 @@
 
   #project {
   max-width: 300px;
-    margin: 0;
+    margin: .5rem;
     border-radius: 0;
     &:nth-child(1) {
       margin-top: 0;

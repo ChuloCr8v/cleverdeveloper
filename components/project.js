@@ -3,7 +3,7 @@ const project = [
   title: "Movie App",
   github: "https://github.com/ChuloCr8v/proflix",
   demo: "https://proflix.vercel.app/",
-  img: '/../public/prof.jpg',
+  img: '/prof.jpg',
   description: "Proflix is a movie database app that can be used to get information about movies including their release date, average ratings and trailer. Movies were fetched from TheMovieDatabase.",
   stackOne: "Html5",
   stackTwo: "Sass",
@@ -16,7 +16,7 @@ const project = [
 },
   {
     title: 'Grampro Photobucket',
-    img: '/../public/grampro.jpg',
+    img: '/grampro.jpg',
     github: "https://github.com/ChuloCr8v/grampro",
     demo: "https://grampro.netlify.app",
     stackOne: "Html5",
@@ -31,7 +31,7 @@ const project = [
   },
   {
     title: 'Crypto Wallstreet',
-    img: '/../public/crypto.jpg',
+    img: '/crypto.jpg',
     github: "https://github.com/ChuloCr8v/cryptowallstreet",
     demo: "https://cryptowallstreet.vercel.app",
     description: "This is a web app designed to provide current information on cryptocurrencies. You can view different cryptocurrency details, their market standings as well as their price chart. You can as well view the history of each cryptocurrency. It also contains a list of exchanges and their brief introduction.",
@@ -46,7 +46,7 @@ const project = [
   },
   {
     title: 'PaulRay Photography',
-    img: '/../public/paulray.jpg',
+    img: '/paulray.jpg',
     github: "https://github.com/ChuloCr8v/paul-ray.github.io",
     demo: "https://paulrayphoto.netlify.app",
     description: "This is a photography portfolio website designed to showcase the profile of a photographer. It contains details about the photographer such as skills, services, past works and contact details.",
@@ -61,17 +61,44 @@ const project = [
   {
     name: 'uknight template',
     link: 'https://uknight.netlify.app',
-    img: '/uknite.png'
+    img: '/uknite.png', 
+    description: "This is a website template with a sleek design and important sections for startups and businesses alike.",
+    stackOne: "Html5",
+    stackTwo: "Css3",
+    stackThree: "JavaScript",
+    featureOne: "Contains different sections including hero, features, about us, call to action section etc.",
+    featureTwo: "Spots an amazing design.",
+    featureThree: "Features a responsive menu.",
+    featureFour: "Mobile Responsive.", 
+    
   },
   {
     name: 'Unox template',
     link: 'https://unox.netlify.app',
-    img: '/unox.png'
+    img: '/unox.png', 
+     description: "This is a website template with a sleek design and important sections for startups and businesses alike.",
+    stackOne: "Html5",
+    stackTwo: "Css3",
+    stackThree: "JavaScript",
+    featureOne: "Contains different sections including hero, features, about us, call to action section etc.",
+    featureTwo: "Spots an amazing design.",
+    featureThree: "Features a responsive menu.",
+    featureFour: "Mobile Responsive.", 
+     
   },
   {
     name: 'Dauxo template',
     link: 'https:// dauxo.netlify.app',
-    img: '/project1.jpg'
+    img: '/project1.jpg', 
+     description: "This is a website template with a sleek design and important sections for startups and businesses alike.",
+    stackOne: "Html5",
+    stackTwo: "Css3",
+    stackThree: "JavaScript",
+    featureOne: "Contains different sections including hero, features, about us, call to action section etc.",
+    featureTwo: "Spots an amazing design.",
+    featureThree: "Features a responsive menu.",
+    featureFour: "Mobile Responsive.", 
+    
   },
 ]
 
