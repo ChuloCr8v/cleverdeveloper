@@ -5,32 +5,40 @@
   align-items: center;
 }
 
-.project,
-.hire {
+
+#project {
   background: white;
-  margin-block:2rem;
-  position: relative;
+  margin-block: 1.5rem;
   @include flex;
   overflow: hidden;
   box-shadow: 3px 3px 20px 2px rgb(0,0,0,0.1);
   border-radius: 10px;
-  position: relative;
   img {
     object-fit:cover;
     position: relative;
     z-index: 10;
   }
-  a {
+ a {
+   @include flex;
+   height: 100px;
+   width: 100px;
     position: absolute;
     transform: translateY(100vh);
     transition: all 0.3s;
-    color: white;
+    color: black;
+    font-weight: 900;
+    font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
-    z-index: 20;
-  }
-  .clip {
-    background: transparent;
+    text-transform: uppercase;
+    z-index: 1000;
+    background: #e4e4e4;
+    border: 2px gold solid ;
+    border-radius: 100%;
+    &:hover {
+      background: transparent;
+      color: #e4e4e4;
+    }
   }
   &::after {
     background: black;
@@ -50,9 +58,9 @@
       transform: scale(1.5);
       transition: all 0.3s ease-in-out;
     }
-    a {
+   a {
       transform: translateY(0);
-      z-index: 20;
+      z-index: 1000;
     }
     &::after {
       height: 100%;
@@ -106,18 +114,14 @@
 }
 
 @media (min-width: 688px) {
-
-  .projects {
-    margin-top: -15rem;
-  }
-
   .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+   @include flex;
+   flex-direction: row;
+   flex-wrap: wrap;
   }
 
-  .project,
-  .hire {
+  #project {
+  max-width: 300px;
     margin: 0;
     border-radius: 0;
     &:nth-child(1) {

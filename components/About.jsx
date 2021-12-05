@@ -12,6 +12,7 @@ import Next from '../public/next.png'
 import AOS from 'aos'
 import "aos/dist/aos.css" 
 import {useEffect} from 'react'
+import Heading from './Heading'
 
 
 const About = () => {
@@ -21,10 +22,11 @@ const About = () => {
   }, []);
   
   return(
-    <section className={styles.about}>
+    <section data-aos="fade-up" className={styles.about}>
       <div className={styles.container}>
-        <h2 className={styles.heading} data-aos="fade-up">About Me</h2>
-        
+          <h2 className="text-2xl text-yellow-200 text-center mt-6 mb-16 font-bold" data-aos="fade-up" >
+        About Me 
+      </h2>
         <div className={styles.content_container}>
           <div className={styles.content} data-aos="fade-up">
             <p> Hello. I am Nkematu Bonaventure, a frontend developer with vast experience creating amazing user interfaces and user experience. 
@@ -35,7 +37,7 @@ const About = () => {
           </div>
   
           <div className={styles.stacks} >
-            <h2 className={styles.subheading} data-aos="fade-up">My Tools</h2>
+            <h2 className="text-center text-xl text-yellow-200 font-bold" data-aos="fade-up">My Tools</h2>
             <div className={styles.stack_icons} >
               
                 <figure data-aos="fade-up">

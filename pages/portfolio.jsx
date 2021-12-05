@@ -5,7 +5,7 @@ import Contact from '../components/contact'
 const Portfolio = () => {
   return(
     <div>
-      <div style={{paddingTop: '20rem'}}>
+      <div style={{paddingTop: '5rem'}}>
         <Projects />
       </div>
         <About />

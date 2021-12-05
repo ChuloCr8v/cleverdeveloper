@@ -11,7 +11,7 @@ const Footer = () => {
   }, []);
   
   return(
-    <footer className={styles.footer} data-aos="fade-up">
+    <footer className="bg-white dark:bg-gray-900 py-10" id={styles.footer}>
       <div className={styles.container}>
         <p>Copyright 2021 @ </p> <a href="https://www.linkedin.com/in/bonaventure-nkematu-77b563148" target="_blank" rel="noopener noreferrer">Nkematu Bonaventure Chinecherem</a>
       </div>

@@ -1,9 +1,10 @@
-.footer {
-  width: 100%;
+#footer {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: -3px -3px 8px 2px rgb(0,0,0,0.01);
   p {
     text-align: center;
   }

@@ -6,7 +6,7 @@ const about  = () => {
   return(
     <div>
       <About />
-      <div style={{marginTop: '15rem'}}>
+      <div style={{marginTop: '5rem'}}>
         <Projects />
         <Contact />
       </div>

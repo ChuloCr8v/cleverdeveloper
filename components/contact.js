@@ -5,7 +5,7 @@ import {FaEnvelope, FaWhatsapp, FaLinkedin, FaGithub, FaPaperPlane} from 'react-
 import AOS from 'aos'
 import "aos/dist/aos.css" 
 import {useEffect} from 'react'
-
+import Heading from './Heading'
 
 const Contact = () => {
   
@@ -14,9 +14,9 @@ const Contact = () => {
   }, []);
   
   return(
-    <section id={styles.contact}>
+    <section data-aos="fade-up" id={styles.contact}>
       <div className={styles.container}>
-        <h2 className={styles.heading} data-aos="fade-up">Contact Me</h2>
+       <Heading text={"About Me"} />
         
         <div className={styles.content_container}>
           <div className={styles.content} data-aos="fade-up">
@@ -33,7 +33,7 @@ const Contact = () => {
           </div>
           
             <div className={styles.form_container}>
-              <p data-aos="fade-up">Send a message</p>
+              <p className="font-bold text-yellow-300" data-aos="fade-up">Send a message</p>
               
               <form data-aos="fade-up">
                 <div className={styles.form_group}>

@@ -6,7 +6,7 @@ const contactMe = () => {
   return(
     <div>
       <Contact />
-      <div style={{marginTop: '15rem'}}>
+      <div style={{marginTop: '5rem'}}>
         <Projects />
         <About />
       </div>

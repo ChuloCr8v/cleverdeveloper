@@ -26,8 +26,8 @@ const Hero = () => {
         <div className={styles.content_container && styles.hero_content_container}>
         
           <div className={styles.intro}>
-            <h2> Hi, </h2>
-            <h1 className="dark:text-gray-200">I&#39;m <span className={styles.name}>Chex<span>Chex</span></span></h1>
+            <p className={styles.h2}> Hi, </p>
+            <h1 className="dark:text-gray-200">I&#39;m <span id={styles.name} className="text-transparent">Chex.<span className="text-blue-400">Chex. </span></span></h1>
           </div>
           <div className={styles.stacks}>
             <p> a frontend developer currently working with </p>
