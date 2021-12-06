@@ -71,7 +71,7 @@
     align-items: center;
     margin-top: 2rem;
   }
- .stack_icon {
+  .stack_icon {
     background: white;
     padding: .3rem;
     border-radius: 100%;
@@ -79,7 +79,6 @@
   figcaption {
     display: block;
     text-align: center;
-    margin: 0.6rem;
     font-weight: bold;
   }
 }
@@ -108,6 +107,9 @@
     grid-template-columns:repeat(4, 1fr);
     figure {
       margin-top: 1rem;
+    }
+    figcaption {
+      margin-inline: 0.3rem;
     }
   }
 

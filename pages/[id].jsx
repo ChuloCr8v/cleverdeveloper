@@ -15,7 +15,7 @@ const projectDetails = (props) => {
       </div>
       
       <h2 className="block mt-20 mb-4 text-center text-2xl text-bold text-yellow-800 dark:text-yellow-200">Description</h2>
-      <p className="text-sm my-4">{props.description}</p>
+      <p className="text-sm my-4 md:mx-12">{props.description}</p>
       
       <h2 className="block mt-20 mb-4 text-center text-2xl text-bold text-yellow-800 dark:text-yellow-200">Tools Used</h2>
       <ol className="stacks flex flex-wrap gap-4 justify-center items-center my-4 px-4">
