@@ -36,7 +36,7 @@ const Contact = () => {
               <p className="font-bold text-xl text-yellow-800 dark:text-yellow-200" data-aos="fade-up">Send a message</p>
               
               <form data-aos="fade-up" action="https://formsubmit.co/chulocr8v@gmail.com" method="POST" target="_blank" rel="noopener noreferrer" >
-                <input type="hidden" name="_next" value="http://localhost:3000/sent" />
+                <input type="hidden" name="_next" value="http://cdev.vercel.app/sent" />
                 <div className={styles.form_group}>
                    <label htmlFor="full name" className="font-bold text-gray-800">Full Name</label>
                    <input className="text-gray-800" type="text" name="name" placeholder="Enter your full name here" required />
