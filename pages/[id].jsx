@@ -7,7 +7,7 @@ const projectDetails = (props) => {
   <div className="mx-auto py-10 pt-20 p-4 min-h-full" style={{width: 'min(90%, 80rem'}} >
       <h2 className="block my-12 text-center text-4xl text-bold text-yellow-800 dark:text-yellow-200">{props.title}</h2>
       <div className="flex flex-col justify-center items-center ">
-        <Image src={props.img} alt={props.title} height="700" width="900" className="my-20 shadow-2xl" />
+        <Image src={props.img} alt={props.title} height="700" width="1000" className="my-20 shadow-2xl" />
       </div>
       <div className="link_container flex justify-center items-center my-8 space-x-3">
         <a href={props.demo} target="_blank" rel="noopener noreferrer"><FaGlobe className="text-3xl hover:text-yellow-300" /></a>
@@ -26,7 +26,7 @@ const projectDetails = (props) => {
       </ol>
       
       <h2 className="block mt-20 mb-4 text-center text-2xl text-bold text-yellow-800 dark:text-yellow-200">Features </h2>
-      <ol className="list-disc features p-10 dark:bg-gray-200 bg-gray-900 text-center space-y-2 my-4 rounded-2xl">
+      <ol className="list-disc features p-10 dark:bg-gray-200 bg-gray-900 text-center space-y-2 my-4 md:mx-36 rounded-2xl">
         <li className="text-sm text-gray-200 dark:text-gray-900 border-b border-opacity-40 border-yellow-200 dark:border-yellow-800 pb-3">{props.featureOne}</li>
         <li className="text-sm text-gray-200 dark:text-gray-900 border-b border-opacity-40 border-yellow-200 dark:border-yellow-800 pb-3">{props.featureTwo}</li>
         <li className="text-sm text-gray-200 dark:text-gray-900 border-b border-opacity-40 border-yellow-200 dark:border-yellow-800 pb-3">{props.featureThree}</li>
