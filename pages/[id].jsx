@@ -27,10 +27,10 @@ const projectDetails = (props) => {
       
       <h2 className="block mt-20 mb-4 text-center text-2xl text-bold text-yellow-800 dark:text-yellow-200">Features </h2>
       <ol className="list-disc features p-10 dark:bg-gray-200 bg-gray-900 text-center space-y-2 my-4 rounded-2xl">
-        <li className="text-sm text-gray-200 dark:text-gray-900">{props.featureOne}</li>
-        <li className="text-sm text-gray-200 dark:text-gray-900">{props.featureTwo}</li>
-        <li className="text-sm text-gray-200 dark:text-gray-900">{props.featureThree}</li>
-        <li className="text-sm text-gray-200 dark:text-gray-900">{props.featureFour}</li>
+        <li className="text-sm text-gray-200 dark:text-gray-900 border-b border-opacity-40 border-yellow-200 dark:border-yellow-800 pb-3">{props.featureOne}</li>
+        <li className="text-sm text-gray-200 dark:text-gray-900 border-b border-opacity-40 border-yellow-200 dark:border-yellow-800 pb-3">{props.featureTwo}</li>
+        <li className="text-sm text-gray-200 dark:text-gray-900 border-b border-opacity-40 border-yellow-200 dark:border-yellow-800 pb-3">{props.featureThree}</li>
+        <li className="text-sm text-gray-200 dark:text-gray-900 border-b border-opacity-40 border-yellow-200 dark:border-yellow-800 pb-3">{props.featureFour}</li>
       </ol>
       <div className="more_projects mb-20 ">
         <Projects />

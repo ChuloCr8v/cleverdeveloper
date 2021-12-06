@@ -78,7 +78,7 @@ const Header = () => {
     <header id={styles.header} className="bg-white dark:bg-gray-900 transition all 3000ms ease mb-20" style={{boxShadow: `${shadow ? '3px 3px 32px 1px rgb(0,0,0,0.06)' : ''}`, transform: `${showHeader ? 'translateY(-100px)' : ''}`}} >
      <div className={styles.container}>
        <Link href="/" className={styles.logo}>
-          <Image src={Logo} alt="dev chex logo" height="50" width="40" />
+          <Image src={Logo} alt="dev chex logo" height="40" width="30" />
        </Link>
        
        <div className={styles.bar_container}>
