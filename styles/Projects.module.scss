@@ -10,96 +10,21 @@
 }
 
 #project {
-  background: white;
   margin-block: 1.5rem;
   @include flex;
   overflow: hidden;
-  box-shadow: 3px 3px 20px 2px rgb(0,0,0,0.1);
   border-radius: 10px;
+  transition: all 0.3s ease;
   img {
     object-fit:cover;
     position: relative;
     z-index: 10;
   }
- a {
-   @include flex;
-   height: 100px;
-   width: 100px;
-    position: absolute;
-    transform: translateY(100vh);
-    transition: all 0.3s;
-    color: black;
-    font-weight: 900;
-    font-size: 1.2rem;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    z-index: 1000;
-    background: #e4e4e4;
-    border: 2px gold solid ;
-    border-radius: 100%;
-    &:hover {
-      background: transparent;
-      color: #e4e4e4;
-    }
-  }
-  &::after {
-    background: black;
-    content: '';
-    height: 0;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transition: all 0.3s ease-in-out;
-    opacity: 0.8;
-    z-index: 10;
-  }
   &:hover {
     box-shadow: 3px 3px 20px 2px rgb(0,0,0,0.3);
-    img {
-      transform: scale(1.5);
-      transition: all 0.3s ease-in-out;
-    }
-   a {
-      transform: translateY(0);
-      z-index: 1000;
-    }
     &::after {
       height: 100%;
     }
-  }
-}
-
-.loader {
-  position: absolute;
-  @include flex;
-  flex-direction: column;
-}
-
-.loader p {
-  color: red;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.loader_icon {
-  height: 3rem;
-  width: 3rem;
-  background: linear-gradient(#e66465, #9198e5);
-  border-radius: 100%;
-  z-index: 0;
-  animation: rotate 0.02s infinite;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(360deg);
-  }
-
-  100% {
-    transform: rotate(0);
   }
 }
 .hire {
@@ -118,13 +43,13 @@
 
 @media (min-width: 688px) {
   .container {
-   @include flex;
-   flex-direction: row;
-   flex-wrap: wrap;
+    @include flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   #project {
-  max-width: 300px;
+    max-width: 300px;
     margin: .5rem;
     border-radius: 0;
     &:nth-child(1) {

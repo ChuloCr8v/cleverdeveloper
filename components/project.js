@@ -60,7 +60,7 @@ const project = [
   },
   {
     title: 'uknight template',
-    link: 'https://uknight.netlify.app',
+    demo: 'https://uknight.netlify.app',
     img: '/uknite.png', 
     description: "This is a website template with a sleek design and important sections for startups and businesses alike.",
     stackOne: "Html5",
@@ -74,7 +74,7 @@ const project = [
   },
   {
     title: 'Unox template',
-    link: 'https://unox.netlify.app',
+    demo: 'https://unox.netlify.app',
     img: '/unox.png', 
      description: "This is a website template with a sleek design and important sections for startups and businesses alike.",
     stackOne: "Html5",
@@ -88,7 +88,7 @@ const project = [
   },
   {
     title: 'Dauxo template',
-    link: 'https:// dauxo.netlify.app',
+    demo: 'https://dauxo.netlify.app',
     img: '/project1.jpg', 
      description: "This is a website template with a sleek design and important sections for startups and businesses alike.",
     stackOne: "Html5",
