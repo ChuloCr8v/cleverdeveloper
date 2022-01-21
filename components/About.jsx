@@ -27,7 +27,7 @@ const About = () => {
             </p>
             <p> My work stacks include <span>HTML5</span>,  <span>CSS3</span>, <span>JavaScript</span>, <span>React.js</span>, <span>Next.js</span>, <span>WordPress</span>, <span>Sass</span>, <span>Bootstrap</span>, <span>TailwindCss</span>, etc. I create websites that are responsive across devices.
             </p>
-            <a href="https://github.com/ChuloCr8v" className={styles.portfolio_link} target="_blank" rel="noopener noreferrer" data-aos="fade-up">Gitub Profile <FaArrowRight className={styles.icon} /></a>
+            <a href="https://github.com/ChuloCr8v" className={styles.portfolio_link} target="_blank" rel="noopener noreferrer" data-aos="fade-up">Github Profile <FaArrowRight className={styles.icon} /></a>
           </div>
 
           <div className={styles.stacks} >
