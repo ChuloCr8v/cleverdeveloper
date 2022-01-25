@@ -1,0 +1,116 @@
+/******************* */
+/*   Global Styles   */
+/******************* */
+
+/*@import url("https://fonts.googleapis.com/css?family=Raleway");
+*/
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --blue: #32325d;
+  --light-blue: #5460F4;
+  --gray: #f5f6fa;
+  --dark-gray: #464646;
+  --brown: #CD4200;
+  --white: #fff;
+  --black: #000;
+  --btn-border: 0.3rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Monospace; 
+  font-size: 1.05rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+a,
+.btn {
+  font-weight: 900;
+  line-height: 1.3;
+  position: relative;
+  z-index: 10;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+@layer base {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    /* font-family: "Raleway", Sans-serif;*/
+    min-height: 100vh;
+    @apply bg-gray-200 text-gray-900 dark:text-gray-200 dark:bg-gray-900
+  }
+}
+
+.container,
+footer {
+  width: min(90%, 50rem);
+}
+
+/* Section */
+
+section,
+footer {
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.heading {
+  text-align: center;
+  color: #ff8400;
+  font-size: 2.6rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--dark-gray);
+}
+
+
+.content_container {
+  margin-top: 1.5rem;
+}
+
+.content {
+  max-height: 20rem;
+  color: var(--dark-gray);
+}

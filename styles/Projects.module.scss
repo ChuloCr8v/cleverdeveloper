@@ -1,0 +1,52 @@
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: min(90%, 80rem);
+  @include flex;
+}
+
+#project {
+  max-width: 400px;
+  margin-top: 4rem;
+  @include flex;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  img {
+    object-fit:cover;
+    max-width: 100%;
+  }
+  &:hover {
+    transform: scale(0.97);
+    &::after {
+      height: 100%;
+    }
+  }
+}
+.hire {
+  a {
+    transform: translateY(0);
+  }
+  &::after {
+    height: 100%;
+  }
+}
+.project {
+  @include flex;
+}
+
+@media (min-width: 688px) {
+  .container {
+    @include flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #project {
+    margin: 2rem;
+  }
+}

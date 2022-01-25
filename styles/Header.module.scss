@@ -1,0 +1,63 @@
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: min(90%, 80rem);
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.container {
+  @include flex;
+  width: min(90%, 80rem);
+  margin-inline: auto;
+  padding-block: .6rem;
+}
+
+.logo {
+  position: relative;
+  z-index: 1000;
+}
+
+.bar_container {
+  @include flex;
+}
+
+.bar_container > * + * {
+  margin-left: 5rem;
+}
+
+.menu_icon {
+  position: relative;
+  z-index: 10;
+  transition: all 0.3s;
+}
+
+.dark_mode {
+  padding: .5rem;
+  background: gray;
+  border-radius: 100px;
+  @include flex;
+  justify-content: center;
+}
+.dark_mode > .icon {
+  color: white;
+  font-size: 1rem;
+}
+
+@media (min-width: 688px) {
+
+  .bar_container {
+    .menu_icon {
+      display: none;
+    }
+  }
+}

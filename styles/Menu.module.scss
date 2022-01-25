@@ -1,0 +1,49 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#show_menu {
+  transform: translateX(0);
+}
+
+#menu_item {
+  a {
+    font-weight: 900;
+    margin-block: 0.7rem;
+    transition: all 0.3s;
+    &:hover,
+    &:active,
+    &:focus {
+      transform: scale(1.05);
+      color: red;
+    }
+  }
+}
+
+#menu_item:nth-child(4) {
+  a {
+    background: linear-gradient(45deg, #f85151, #f454b0);
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    color: white;
+  }
+}
+
+@media (min-width: 688px) {
+  .nav {
+    transform: translateX(0);
+    top: 0;
+    width: auto;
+    height: 0;
+    position: relative;
+    background: transparent;
+  }
+  #menu {
+    @include flex;
+    * + * {
+      margin-left: 2rem;
+    }
+  }
+}

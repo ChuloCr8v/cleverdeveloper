@@ -1,0 +1,119 @@
+
+
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: min(90%, 80rem);
+}
+
+#contact {
+  box-shadow: 3px 3px 8px 2px rgb(0,0,0,0.2);
+}
+
+.heading {
+  font-size: 1.5rem ;
+}
+
+.content {
+  margin-top: 3rem;
+  * {
+    margin-top: 1rem;
+  }
+}
+
+.social_icons {
+  @include flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+#social_icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+  filter: drop-shadow(3px 3px 8px 2px rgb(0,0,0)) ;
+  &:hover {
+    color: red;
+    transform: scale(0.8);
+  }
+}
+
+.form_container {
+  padding-top: 3rem;
+  border: 2px silver solid ;
+  @include flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  box-shadow: 3px 3px 30px 0.5px rgb(0,0,0,0.08);
+  form {
+    background: white;
+    width: 100%;
+    @include flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding: 4rem 1rem;
+    box-shadow: inset 3px 3px 30px 0.5px rgb(0,0,0,0.08);
+  }
+}
+
+.form_group {
+  width: 80%;
+  @include flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  input,
+  textarea {
+    padding: .8rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    box-shadow: 3px 3px 30px 0.5px rgb(0,0,0,0.08);
+    &:hover {
+      outline: 3px blue solid;
+    }
+  }
+}
+
+.submit {
+  width: 80%;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  border: 1px black solid;
+  @include flex;
+  &:hover {
+    background: white;
+    color: black;
+  }
+}
+
+.submit  * {
+  display: block;
+    margin-left: .5rem;
+  }
+
+@media (min-width: 688px) {
+  .content_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .form_container {
+      margin-top: 3rem;
+      margin-left: 3rem;
+    }
+  }
+
+  .content {
+    p {
+      max-height: 100%;
+    }
+  }
+}

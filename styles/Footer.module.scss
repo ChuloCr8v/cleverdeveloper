@@ -1,0 +1,29 @@
+#footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -3px -3px 8px 2px rgb(0,0,0,0.01);
+  p {
+    text-align: center;
+  }
+  a {
+    text-align: center;
+    font-weight: bold;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+@media (min-width: 688px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      margin-left: 0.6rem;
+    }
+  }
+}
