@@ -20,9 +20,9 @@ const Projects = () => {
       <Heading text={"Projects"} />
       <div className={styles.container}>
         {Project.map((item, index) => (
-          <div key="index" className="project dark:bg-gray-800 bg-white dark:text-white text-gray-800 dark:border-white dark:border-2" id={styles.project} data-aos="fade-up">
+          <div key="index" className=" dark:text-white text-gray-800 dark:border-white dark:border-2" id={styles.project} data-aos="fade-up">
             <img src={item.img} height={500} width={600} alt={item.name} />
-            <div className="details text-center p-8 ">
+            <div className="details text-center py-8 ">
               <h2 className="title text-xl text-red-800 dark:text-yellow-400 font-bold text-uppercase">{item.title}</h2>
               <div className="link_container flex justify-center items-center my-8 space-x-3">
                 <a href={item.demo} target="_blank" rel="noopener noreferrer"><FaGlobe className="relative text-3xl hover:text-yellow-300" /></a>

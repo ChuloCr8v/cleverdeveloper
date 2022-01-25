@@ -10,18 +10,16 @@
 }
 
 #project {
-  margin-block: 1.5rem;
+  max-width: 600px;
+  margin-top: 4rem;
   @include flex;
-  overflow: hidden;
-  border-radius: 10px;
   transition: all 0.3s ease;
   img {
     object-fit:cover;
-    position: relative;
-    z-index: 10;
+    max-width: 100%;
   }
   &:hover {
-    box-shadow: 3px 3px 20px 2px rgb(0,0,0,0.3);
+    transform: scale(0.97);
     &::after {
       height: 100%;
     }
@@ -49,11 +47,6 @@
   }
 
   #project {
-    max-width: 300px;
-    margin: .5rem;
-    border-radius: 0;
-    &:nth-child(1) {
-      margin-top: 0;
-    }
+    margin-inline:.5rem;
   }
 }
