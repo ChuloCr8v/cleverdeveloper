@@ -1,4 +1,4 @@
-import styles from '../styles/About.module.scss'
+import styles from '../styles/About.module.scss';
 import { FaArrowRight } from 'react-icons/fa'
 import Link from 'next/link'
 import Image from 'next/image'
