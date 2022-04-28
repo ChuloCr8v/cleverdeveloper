@@ -29,7 +29,7 @@ const project = [
     featureThree: "Mobile Responsiveness",
     featureFour: "Spots a sleek design.",
   },
- /* {
+  {
     title: 'Crypto Wallstreet',
     img: '/crypto.jpg',
     github: "https://github.com/ChuloCr8v/cryptowallstreet",
@@ -38,12 +38,12 @@ const project = [
     stackOne: "Html5",
     stackTwo: "Sass",
     stackThree: "Css3",
-    stackFour: "React-redux",
+    stackFour: "Next.js",
     featureOne: "Displays vital information on cryptocurrencies.",
     featureTwo: "Chart.js for displaying crypto price chart",
     featureThree: "Top cryptocurrency news update.",
     featureFour: "Mobile Responsive.",
-  },*/
+  },
   {
     title: 'Big Shotz Photography',
     img: '/big.jpg',
